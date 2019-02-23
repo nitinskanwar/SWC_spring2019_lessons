@@ -427,7 +427,7 @@ Our question 3 can be answered with one line of code without creating unnecessar
 $ grep 'Uruguay' Uruguay.txt | cut -f4 | sort -n |tail -n1 > Uruguay_LE_max2.txt
 ```
 #### **Challenge 4**
-Use pipes to find the year with the highest life expectancy in `Sweden.txt` Record the year to `Uruguay_YearWithMaxLE.txt`
+Use pipes to find the year with the highest life expectancy in `Sweden.txt` Record the year to `Sweden_YearWithMaxLE.txt`
 First, copy `Sweden.txt` to `unix-shell`:
 `cp Data/ByCountry/Sweden.txt .`
 Hints: 1) to select multiple columns, use `cut -fcol1,col2` For example, to select columns 2 and 3, use `cut -f2,3` 2) to sort by column 2, use `sort -k2`
