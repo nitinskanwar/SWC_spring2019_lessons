@@ -518,6 +518,14 @@ $ for datafile in G*.txt;do ls $datafile;done
 # And if you want to write output to file
 $ for file in U*a*; do cut -f1,3,4 $file|sort -nk3|tail -n1 >> Highest_LE.txt;done
  ```
+***Note:***
+Notice that you are using the append symbol >> here to save the output to a file before 'done'. This file will be created after the loop runs for the first time, and then for each reiteration, the outputs will be appended to this file.
+
+Instead, you could also use
+```
+$ for file in U*a*; do cut -f1,3,4 $file|sort -nk3|tail -n1; done > Highest_LE.txt
+```
+In this case, the final output is saved to the file once the loop is completed. 
 
 
 ### 2e. Bash: writing shell scripts
