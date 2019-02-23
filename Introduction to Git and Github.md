@@ -98,7 +98,7 @@ We will explore some of them next.
 ## 3. Track your documents with Git
 
 We are now ready to use Git.
-To start with, let's make a new folder `git_test` on your Desktop, outside `SWC_fall2019` directory.
+To start with, let's make a new folder `git_test` on your Desktop, outside `SWC_spring2019` directory.
 
 Suppose you started working on your thesis. You create a folder `Thesis` inside `git_test` . 
 ```shell
@@ -258,11 +258,11 @@ Your versions (or commits) have unique identifiers. In addition, the most recent
 $ git diff 851e745b2 HEAD notes.txt
 ```
  
-Now, let's see how to turn an existing directory into git repository. You might want to track files for some of your existing projects. Maybe for `SWC_fall2019` directory? How will you place this directory under Git control?
+Now, let's see how to turn an existing directory into git repository. You might want to track files for some of your existing projects. Maybe for `SWC_spring2019` directory? How will you place this directory under Git control?
 
 ```
-#Go to SWC_fall2019
-$ cd ~/Desktop/SWC_fall2019
+#Go to SWC_spring2019
+$ cd ~/Desktop/SWC_spring2019
 
 #initialize
 $ git init
@@ -274,7 +274,7 @@ $ git status
 $ git add .
 
 #commit changes 
-$ git commit -m "added SWC_fall2019 directory"
+$ git commit -m "added SWC_spring2019 directory"
 
 #check commit history
 $ git log
@@ -291,7 +291,7 @@ Let's try it.
 
 **Challenge 3.2**
 ```
-Make a new directory `git_github` in `SWC_fall2019`. 
+Make a new directory `git_github` in `SWC_spring2019`. 
 Make a file called git_steps.txt inside `git_github`. 
 Record `git` commands you must use to start tracking your changes.
 Save this file and commit `git_github` directory to Git.
@@ -399,15 +399,15 @@ So far, our work was restricted to the local machine. But if you want to share y
 
 If you have not created Github account, please go to github.com and do it now. 
 
-Now we want to create repository that will be a remote copy of our local `SWC_fall2019` repository. 
+Now we want to create repository that will be a remote copy of our local `SWC_spring2019` repository. 
 ```
 #from your github account:
 Click on 'new repository'
-Repository name: 'SWC_fall2019'
+Repository name: 'SWC_spring2019'
 Type: public
 Click on 'create repository'
 ```
-You have just created remote empty `SWC_fall2019` repository. This repository has a specific identifier URL associated with it. We now let our local machine know that we have a remote location for our local repository.
+You have just created remote empty `SWC_spring2019` repository. This repository has a specific identifier URL associated with it. We now let our local machine know that we have a remote location for our local repository.
 ```
 #on your local machine
 $ git remote add origin URL
@@ -430,7 +430,7 @@ This is it! You just made your local '' repository available on Github to everyo
 **Challenge 6.1**
 ```
 Suppose you want to add another file to your repository. 
-Take any file outside SWC_fall2019 directory
+Take any file outside SWC_spring2019 directory
 and add it to your local repository and then push it to Github.
 
 
@@ -455,15 +455,15 @@ You can contribute to whatever project you like. Suppose you would like to add a
 Steps for making pull requests (or PRs):
 
 - go to the project you want to contribute to
-  (https://github.com/AnnaWilliford/SWC_fall2019_lessons)
+  (https://github.com/AnnaWilliford/SWC_spring2019_lessons)
 
 - copy the project to your Github account by clicking `fork` button on the top right corner of the page
 
-You should now have a new repository called `SWC_fall2019_lessons` in **YOUR** account. This is great, you can copy other projects/repositories to your Github account!
+You should now have a new repository called `SWC_spring2019_lessons` in **YOUR** account. This is great, you can copy other projects/repositories to your Github account!
 
 You can also copy remote repository to the local machine, say to the Desktop. From your local terminal, type:
 ```
-$ git clone https://github.com/YourUsername/SWC_fall2019_lessons.git ~/Desktop/SWC_fall2019_lessons.git
+$ git clone https://github.com/YourUsername/SWC_spring2019_lessons.git ~/Desktop/SWC_spring2019_lessons.git
 ```
 You now have all lessons from this workshop both on your Github account and on your local machine!
 
@@ -472,7 +472,7 @@ See, you have access to any public repository on Github in a similar way.
 Now, what is even better, you can contribute to the project you forked/cloned(copied) by suggesting changes to the documents in the repository. If, for example, you find a better way to explain some topic we were covering in this workshop, you can make changes to the lessons locally on your machine and then send a `pull request` to the owner of repository. The owner will review your changes and decide to accept(merge) proposed changes or reject them.
 
 Want to try?
-Go to `SWC_fall2019_lessons` repo on your local machine and open a new topic branch for the project:
+Go to `SWC_spring2019_lessons` repo on your local machine and open a new topic branch for the project:
 ```
 $ git checkout -b YourName
 ```
