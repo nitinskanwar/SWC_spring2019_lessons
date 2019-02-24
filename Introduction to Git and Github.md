@@ -75,7 +75,7 @@ $ git config --global core.editor "notepad"
 $ git config --global core.editor "C:/Program Files (x86)/Notepad++/notepad++.exe"
 
 #Linux
-$ git config --global core.editor "nano --wait --new-window"
+$ git config --global core.editor "nano"
 ```
 The four commands we just ran above only need to be run once: the flag --global tells Git to use the settings for every project, in your user account, on this computer.
 
