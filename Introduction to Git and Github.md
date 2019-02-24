@@ -369,30 +369,6 @@ $ git checkout -- git_steps.txt
 $ cat git_steps.txt
 ```
 
-## 5. Tracking Microsoft Word documents
-
-This part of the lesson has been modified from this [source](http://blog.martinfenner.org/2014/08/25/using-microsoft-word-with-git/)
-
-Initially, git was designed to track changes to software source code. The functionality of Git is now greatly expanded and you can track various file formats, including documents written in Microsoft Word. But first, you need to convert word documents to plain text and let Git know that Pandoc is the tool you use to do it.
-- Install [pandoc](https://github.com/jgm/pandoc/releases/tag/2.0.1.1) for you system.
-
-- Create a new file, `.gitattributes` in your git project folder
-```
-#add this line to .gitattributes
-*.docx diff=pandoc
-```
-- Open `.gitconfig` file in your home directory
-```
-#add these lines to .gitconfig 
-
-[diff "pandoc"]
-  textconv=pandoc --to=markdown
-  prompt = false
-[alias]
-  wdiff = diff --word-diff=color --unified=1
-  ```
- The last command sets alias for `diff` command to `wdiff`. You can now use `git wdiff` to see changes between versions by word and not by line.
-
 ## 6. GitHub: share your repository with the world
 
 So far, our work was restricted to the local machine. But if you want to share your repositories with your colleagues, it would be nice to have a central place where everyone could make their repositories available for comments/suggestions/collaborations. Github is a service that allows us to do that. 
