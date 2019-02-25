@@ -431,7 +431,7 @@ You can contribute to whatever project you like. Suppose you would like to add a
 Steps for making pull requests (or PRs):
 
 - go to the project you want to contribute to
-  (https://github.com/AnnaWilliford/SWC_spring2019_lessons)
+  (https://github.com/uta-carpentries/SWC_spring2019_lessons)
 
 - copy the project to your Github account by clicking `fork` button on the top right corner of the page
 
@@ -454,7 +454,7 @@ $ git checkout -b YourName
 ```
 You can now modify and add anything you want in this project. When ready with your final contributions, you will be able to send your pull request.
 
-For example, add your create new file, say "R_intro_NewChallenge"
+For example, add your created new file, say "Python_Basics_NewChallenge"
 ```
 #create new file
 $ git add .
